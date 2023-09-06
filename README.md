@@ -2,8 +2,7 @@
 
 fobcoin.js:
 
-  Chaincode Contract code in fobcoin.js file
-  Which includesrequired functionalities (createUser, transferCoin, getBalance)
+  Chaincode Contract code in fobcoin.js file, Which includes required functionalities (createUser, transferCoin, getBalance)
   
 app.js  
 
