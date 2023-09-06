@@ -21,3 +21,7 @@ In code:
 2) We transfer a specified amount of FabCoin from one user to another using the transferCoin transaction, specifying the sender's ID (senderId), receiver's ID (receiverId), and the transfer amount (transferAmount).
 
 3) We query the balance of a user using the getBalance transaction by specifying the user ID (queryUserId) and printing the resulting balance.
+
+# You can run Node.js application using:
+node app.js
+
