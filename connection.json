@@ -1,0 +1,38 @@
+{
+    "name": "mychannel",
+    "description": "My Hyperledger Fabric Network",
+    "client": {
+        "organization": "Org1",
+        "connectionTimeout": 3000,
+        "eventHubConnectionTimeout": 3000
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "Org1MSP",
+            "peers": ["peer0.org1.example.com"],
+            "certificateAuthorities": ["ca.org1.example.com"]
+        }
+    },
+    "peers": {
+        "peer0.org1.example.com": {
+            "url": "grpcs://peer0.org1.example.com:7051",
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.org1.example.com"
+            },
+            "tlsCACerts": {
+                "pem": "/path/to/org1-ca.pem"
+            }
+        }
+    },
+    "orderers": {
+        "orderer.example.com": {
+            "url": "grpcs://orderer.example.com:7050",
+            "grpcOptions": {
+                "ssl-target-name-override": "orderer.example.com"
+            },
+            "tlsCACerts": {
+                "pem": "/path/to/orderer-ca.pem"
+            }
+        }
+    }
+}
